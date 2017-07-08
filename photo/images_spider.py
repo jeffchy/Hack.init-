@@ -112,5 +112,5 @@ class Crawler:
 
 crawler = Crawler(0.05)
 # crawler.start('美女', 1, 2)
-crawler.start('上好佳鲜虾片', 1, 1)
+crawler.start('hackthon_init()', 1, 1)
 # crawler.start('帅哥', 5)
