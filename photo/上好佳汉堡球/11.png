@@ -1,0 +1,136 @@
+2171
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>A8联盟 - 好口碑、值得信任的高效广告联盟</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/themes/v5/styles/css/main.css" type="text/css" media="all" />
+</head>
+<body>
+<div class="hd">
+    <div class="hdInner">
+                    <div class="l logo"><a href="/"><img src="/themes/v5/styles/images/logo.png" /></a></div>
+            <div class="r hdR"><a href="/register">[注册]</a><a href="/">[登录]</a></div>
+            </div>
+</div>
+<div class="nav">
+    <ul>
+        <li act><a href="/">网站首页</a></li>
+        <li ><a href="/news">联盟公告</a></li>
+        <li ><a href="/style">广告类型</a></li>
+        <li ><a href="/help">常见问题</a></li>
+    </ul>
+</div><div class="banner1">
+    <div class="sliderWrap">
+        <div class="slider">
+            <ul>
+                <li class="l1"></li>
+                <li class="l2"></li>
+                <li class="l3"></li>
+            </ul>
+            <!--<dl>
+                <dd class="act"></dd>
+                <dd></dd>
+                <dd></dd>
+            </dl>-->
+        </div>
+    </div>
+    <div class="banner1Inner">
+        <div class="r dlZone">
+            <h1>会员登录</h1>
+            <div class="dlFrm">
+                <input type="hidden" name="ret_url" class="ret_url" value=""/>
+                <p class="p1"><label class="lb1"></label><input type="text" name="username" class="username"/></p>
+                <p class="p1"><label class="lb2"></label><input type="password" name="password" class="password"/></p>
+                <p class="p2"><input type="checkbox" name="remember" class="remember"　value="1"/><span>记住密码</span>&nbsp;&nbsp;<span id="js_err" class="err"></span></p>
+                <p class="p3"><input type="submit" value="登 录" id="js_loginBtn"/></p>
+            </div>
+                        <div class="dlBot"><span>还没有A8账号？<a href="/register">立即注册</a></span><a href="tencent://message/?uin=1032017896&Site=A8联盟客服&Menu=yes" class="kfBtn"><img src="/themes/v5/styles/images/kfBtn.png" /></a></div>
+        </div>
+    </div>
+</div>
+<div class="gglx">
+    <h2>广告类型</h2>
+    <p>依托电脑快速发展的时代和海量的优质广告素材，A8 PC广告通过丰富的广告样式为广大流量主提供最优质的商业化解决方案。</p>
+    <ul>
+        <li class="l1">
+            <h3>CPV</h3>
+            <p>CPV就是发布不收费，点击不收费，只是按照广告的展示量按照浏览指向网站的有意向客户数量收费的。</p>
+        </li>
+        <li class="l2">
+            <h3>CPC</h3>
+            <p>CPC是“Cost Per Click”的英文缩写，以每点击一次计费。这样的方法加上点击率限制可以加强作弊的难度，网民的每一次点击就会为广告主带来真实的流量。</p>
+        </li>
+        <li class="l3">
+            <h3>CPM</h3>
+            <p>每千人成本CPM(千人成本)指的是广告投放过程中，听到或者看到某广告的每一人平均分担到多少广告成本。</p>
+        </li>
+        <li class="l4">
+            <h3>CPA</h3>
+            <p>CPV就是发布不收费，点击不收费，只是按照广告的展示量按照浏览指向网站的有意向客户数量收费的。</p>
+        </li>
+    </ul>
+</div>
+<div class="lmgg">
+    <div class="lmggInner">
+        <h3>联盟公告</h3>
+        <ul>
+                            <li><em>[重要通知]</em><a href="/news/1582">严禁刷量、换量类型流量投放a8联盟广告<i></i></a><span>>06</span></li>
+                            <li><em>[重要通知]</em><a href="/news/1642">2017年7月6日满100元佣金已经支付<i></i></a><span>>07</span></li>
+                            <li><em>[重要通知]</em><a href="/news/1641">2017年7月5日满100元佣金已经支付<i></i></a><span>>06</span></li>
+                            <li><em>[重要通知]</em><a href="/news/1640">2017年7月4日满100元佣金已经支付<i></i></a><span>>05</span></li>
+                            <li><em>[重要通知]</em><a href="/news/1639">2017年7月3日满100元佣金已经支付<i></i></a><span>>04</span></li>
+                            <li><em>[重要通知]</em><a href="/news/1638">2017年6月30日至7月2日满100元佣金已经支付<i></i></a><span>>03</span></li>
+                            <li><em>[重要通知]</em><a href="/news/1637">2017年6月29日满100元佣金已经支付<i></i></a><span>>30</span></li>
+                            <li><em>[重要通知]</em><a href="/news/1636">2017年6月28日满100元佣金已经支付<i></i></a><span>>29</span></li>
+                            <li><em>[重要通知]</em><a href="/news/1635">2017年6月27日满100元佣金已经支付<i></i></a><span>>28</span></li>
+                            <li><em>[重要通知]</em><a href="/news/1634">2017年6月26日满100元佣金已经支付<i></i></a><span>>27</span></li>
+            
+
+        </ul>
+    </div>
+</div>
+<div class="frdZone">
+    <h3>合作伙伴</h3>
+    <div class="frdSliderWrap">
+        <div id="js_frdSlider" class="frdSlider">
+            <ul>
+                <li><div><a href="#"><img src="/themes/v5/styles/images/img1.png" /><span>公司名称</span></a><a href="#"><img src="/themes/v5/styles/images/img1.png" /><span>公司名称</span></a><a href="#"><img src="/themes/v5/styles/images/img1.png" /><span>公司名称</span></a><a href="#"><img src="/themes/v5/styles/images/img1.png" /><span>公司名称</span></a><a href="#"><img src="/themes/v5/styles/images/img1.png" /><span>公司名称</span></a><a href="#"><img src="/themes/v5/styles/images/img1.png" /><span>公司名称</span></a></div></li>
+                <li><div><a href="#"><img src="/themes/v5/styles/images/img1.png" /><span>公司名称</span></a><a href="#"><img src="/themes/v5/styles/images/img1.png" /><span>公司名称</span></a><a href="#"><img src="/themes/v5/styles/images/img1.png" /><span>公司名称</span></a><a href="#"><img src="/themes/v5/styles/images/img1.png" /><span>公司名称</span></a><a href="#"><img src="/themes/v5/styles/images/img1.png" /><span>公司名称</span></a><a href="#"><img src="/themes/v5/styles/images/img1.png" /><span>公司名称</span></a></div></li>
+            </ul>
+        </div>
+        <a id="js_prev" class="prev"></a>
+        <a id="js_next" class="next"></a>
+    </div>
+</div><div class="bot">
+    <div class="botInner">
+        <div class="l logo2"><img src="/themes/v5/styles/images/logo2.png" /></div>
+        <div class="l botR">
+            <dl>
+                <dt><em>网站主客服</em></dt>
+                                    <dd><a href="tencent://message/?uin=1032017896&Site=A8联盟客服&Menu=yes" target="_blank"><i></i>管管</a></dd>
+                                    <dd><a href="tencent://message/?uin=2454935355&Site=A8联盟客服&Menu=yes" target="_blank"><i></i>喵喵</a></dd>
+                                    <dd><a href="tencent://message/?uin=3170684284&Site=A8联盟客服&Menu=yes" target="_blank"><i></i>冠希</a></dd>
+                            </dl>
+            <dl>
+                <dt><em>广告主客服</em></dt>
+                                    <dd><a href="tencent://message/?uin=2851261275&Site=A8联盟客服&Menu=yes" target="_blank"><i></i>小罗</a></dd>
+                                    <dd><a href="tencent://message/?uin=2851261271&Site=A8联盟客服&Menu=yes" target="_blank"><i></i>依依</a></dd>
+                                    <dd><a href="tencent://message/?uin=1033974655&Site=A8联盟客服&Menu=yes" target="_blank"><i></i>星星</a></dd>
+                            </dl>
+        </div>
+    </div>
+</div>
+<div class="ft">
+    <p><img src="/themes/v5/styles/images/logo3.png" /></p>
+    <p>Copyright ©2014 a8da.comAll Rights Reserved</p>
+</div>
+<div style="display:none;"><script src="https://s19.cnzz.com/z_stat.php?id=1262659642&web_id=1262659642" language="JavaScript"></script></div><script src="/themes/v5/styles/js/jquery.min.js"></script>
+<script src="/themes/v5/styles/js/main.js"></script>
+</body>
+</html>
+
+0
+
