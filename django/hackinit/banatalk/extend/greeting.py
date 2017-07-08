@@ -25,7 +25,7 @@ CHATLOG = {"旺旺QQ可乐软糖":{"你好":"我是旺仔QQ糖，可乐味！哦
 			,"香蕉":{"你好":"粑粑，娜娜，粑粑娜娜！","你是谁":"粑娜娜，补充矿物元素必备哦！","好吃":"废话当然好吃辣，补充维生素诶！"}
 			,"雪碧":{"你好":"雪碧！透心凉，心飞扬！","你是谁":"雪碧！透心凉，心飞扬！","好吃":"我明明是好喝？但不要贪杯哦"}
 			,"亲嘴烧":{"你好":"卫龙亲嘴烧，民族品牌绝不卖给韩国人","你是谁":"我是卫龙亲嘴烧，含有高碳水化合物，少吃点！","好吃":"废话当然好吃辣"}
-			,"hackinit":{"你好":"Hello, Hackers!","你是谁":"我是hackinit，全国最大的hackathon之一!","好吃":"我怎么能吃呢？"}			
+			,"hackinit":{"你好":"Hello, Hackers!","你是谁":"我是hackinit，全国最大的hackathon之一!","好吃":"我怎么能吃呢？"}
 			}
 
 def changeMeaning(greeting):
@@ -59,4 +59,4 @@ def getResponse(obj,greeting):
 	return dictJson["text"]
 
 
-print (getResponse("雪碧","你好吃吗？"))
+# print (getResponse("雪碧","你好吃吗？"))
