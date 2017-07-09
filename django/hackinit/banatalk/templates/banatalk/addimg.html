@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Food Talks</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel=stylesheet type=text/css href="../../static/banatalk/style.css">
+    <link rel=stylesheet type=text/css href="../../static/banatalk/css/fileinput.min.css">
+    <link rel=stylesheet type=text/css href="../../static/banatalk/css/fileinput.css">
+    <link rel=stylesheet type=text/css href="../../static/banatalk/css/fileinput-rtl.css">
+    <link rel=stylesheet type=text/css href="../../static/banatalk/css/fileinput-rtl.min.css">
+    <!-- Custom styles for this template -->
+    <style>
+      body
+  {
+  background-image:url('../../static/banatalk/cover.jpeg');
+  background-repeat:no-repeat;
+  background-size:cover
+  }
+.h1{font-size:70px; line-height:70px;color:	#fff}
+  </style>
+  </head>
+  <body >
+
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">Food Your Health</h3>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#">DashBoard</a></li>
+                  <li><a href="#">Help</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <label class="control-label">Select File</label>
+          <div class="inner cover">
+            <!-- <h1 class="h1" >Welcome Home</h1> -->
+            <!-- <p class="lead">Click the buttom below and see what's going on. </p> -->
+            <p class="lead">
+                <!-- <a href="#" class="btn btn-lg btn-info">Expore</a> -->
+                <form enctype="multipart/form-data" class="">
+                <!-- <input name="file" type="file" id="file"/> -->
+                <!--贴图库Token-->
+                <input id="file" name="file" type="file" multiple class="file-loading">
+
+                <input name="Token" type="hidden" id="Token" value="320b244da75a42a89391b408d552a1d767e10105:djtSUo28PBBTQuzUf-Ud3yLnHn8=:eyJkZWFkbGluZSI6MTQ5OTU0Mjg1NiwiYWN0aW9uIjoiZ2V0IiwidWlkIjoiNjAwMDg0IiwiYWlkIjoiMTMyNzkwNiIsImZyb20iOiJmaWxlIn0=" />
+
+                <input class="btn btn-md btn-primary" style="margin-top:20px" type="button" value="Upload" />
+                </form>
+            </p>
+          </div>
+
+          <div class="mastfoot"  >
+            <div class="inner">
+              <p >Template used <a href="http://getbootstrap.com" target="_Blank">Bootstrap</a> by <a href="https://github.com/onion233" target="_Blank">@onion</a>.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <progress style="display:none"></progress>
+    <div id="res"></div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../../static/banatalk/js/fileinput.js"></script>
+    <script src="../../static/banatalk/js/fileinput.min/js"></script>
+
+    <script>
+    $(document).on('ready', function() {
+        $("#file").fileinput({showCaption: false});
+    });
+    </script>
+    <script type="text/javascript">
+    // initialize with defaults
+      $("#input-id").fileinput();
+
+    </script>
+    <script>
+    $(':button').click(function(){
+        var formData = new FormData($('form')[0]);
+        $.ajax({
+            url: 'http://up.imgapi.com/v3/',
+            type: 'POST',
+            xhr: function() {
+                myXhr = $.ajaxSettings.xhr();
+                if(myXhr.upload){
+                    myXhr.upload.addEventListener('progress',progressHandlingFunction, false);
+                }
+                return myXhr;
+            },
+            beforeSend: function(){
+    			$('progress').show();
+    		},
+            success: function(data){
+    			console.log(data);
+    			// $('#res').html(JSON.stringify(data));
+          alert("上传成功，linkurl:"+data.linkurl);
+          
+          window.location = "/banatalk/chatroom/?res2="+data.linkurl;
+    			//window.location.reload();
+    		},
+            error: function(data){
+    			console.log(data);
+    		},
+            data:formData,
+            cache: false,
+            contentType: false,
+            processData: false
+        });
+    });
+    function progressHandlingFunction(e){
+        if(e.lengthComputable){
+            $('progress').attr({value:e.loaded,max:e.total});
+        }
+    }
+    </script>
+  </body>
+</html>

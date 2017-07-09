@@ -19,11 +19,11 @@ class Eat(models.Model):
 
     name = models.CharField(max_length=50)
     weight = models.FloatField() # g
-    time = models.DateTimeField()
+    time = models.CharField(max_length=50) # 1 - 24
 
 # the user data for 1 day
 class User(models.Model):
-	Datetime = models.DateTimeField()
+	Datetime = models.CharField(max_length=50) # 1 - 24
 	energy = models.FloatField() #in /mg
 	protein = models.FloatField() #in /mg
 	fat = models.FloatField() #in /mg

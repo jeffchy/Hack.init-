@@ -38,13 +38,14 @@ def changeMeaning(greeting):
 
 
 def getResponse(obj,greeting):
-	greeting = changeMeaning(greeting.upper())
-	greetingArr = list(CHATLOG[obj].keys())
-	for i in range(len(CHATLOG["旺旺QQ可乐软糖"])):
-		if greetingArr[i] in greeting:
-			return CHATLOG[obj][greetingArr[i]]
-		else:
-			continue
+	if (obj != ""):
+		greeting = changeMeaning(greeting.upper())
+		greetingArr = list(CHATLOG[obj].keys())
+		for i in range(len(CHATLOG["旺旺QQ可乐软糖"])):
+			if greetingArr[i] in greeting:
+				return CHATLOG[obj][greetingArr[i]]
+			else:
+				continue
 	q_data = {
 		'key': "716290f57aa64f5782958d6c9451f4ed",
 		'info': greeting,
